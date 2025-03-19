@@ -6,16 +6,22 @@ import java.util.List;
 public class Inventario {
     ArrayList<Producto> productos = new ArrayList<>();
 
-    public ArrayList<Producto> getProductos() {
-        return productos;
-    }
-
-    public void setProductos(ArrayList<Producto> productos) {
-        this.productos = productos;
+    public void verProductos() {
+        for(Producto p : productos){
+            System.out.println(p.toString());
+        }
     }
 
     public void agregarProducto(Producto producto){
         productos.add(producto);
+        System.out.println("Producto agregado al inventario!");
+    }
+    public void eliminarProducto(int id){
+        for(Producto p : productos){
+            if (p.getId() == id) {
+                productos.remove(p);
+            }
+        }
         System.out.println("Producto agregado al inventario!");
     }
 }
