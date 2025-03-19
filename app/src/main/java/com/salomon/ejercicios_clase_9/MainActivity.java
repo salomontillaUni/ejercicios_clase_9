@@ -13,6 +13,9 @@ import com.salomon.ejercicios_clase_9.models.Inventario;
 import com.salomon.ejercicios_clase_9.models.Producto;
 
 public class MainActivity extends AppCompatActivity {
+    Producto p = new Producto(0, "Iphone", 500.00,
+            new Categoria("Tecnologia"));
+    Inventario inventario = new Inventario();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +30,5 @@ public class MainActivity extends AppCompatActivity {
         inventario.agregarProducto(p);
         inventario.verProductos();
     }
-
-    Producto p = new Producto(0, "Iphone", 500.00,
-            new Categoria("Tecnologia"));
-    Inventario inventario = new Inventario();
 
 }
