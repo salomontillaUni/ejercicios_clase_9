@@ -44,4 +44,13 @@ public class Producto {
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Producto:" + '\n'+
+                "id: " + id +
+                ", nombre: '" + nombre +
+                ", precio: " + precio +
+                ", categoria: " + categoria;
+    }
 }
