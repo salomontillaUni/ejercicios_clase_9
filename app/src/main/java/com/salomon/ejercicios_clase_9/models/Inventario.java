@@ -20,6 +20,10 @@ public class Inventario {
         for(Producto p : productos){
             if (p.getId() == id) {
                 productos.remove(p);
+            }else if(productos.isEmpty()){
+                System.out.println("El inventario esta vacio!");
+            }else {
+                System.out.println("No se encontro el producto con ese id!");
             }
         }
         System.out.println("Producto agregado al inventario!");
