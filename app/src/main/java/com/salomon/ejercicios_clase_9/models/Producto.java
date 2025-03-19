@@ -51,6 +51,6 @@ public class Producto {
                 "id: " + id +
                 ", nombre: '" + nombre +
                 ", precio: " + precio +
-                ", categoria: " + categoria;
+                ", categoria: " + categoria.toString();
     }
 }
